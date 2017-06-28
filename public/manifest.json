@@ -1,15 +1,29 @@
 {
+  "manifest_version": 2,
   "short_name": "React App",
   "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png"
-    }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "version": "1.0",
+  "description": "SKAG generator",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html",
+    "default_title": "Click here!"
+  },
+  "author": "Luke Schoen",
+  "incognito": "not_allowed",
+  "minimum_chrome_version": "58.0.3029.110",
+  "offline_enabled": true,
+  "omnibox": {
+    "keyword": "aString"
+  },
+  "optional_permissions": ["tabs"],
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
 }

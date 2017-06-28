@@ -1,3 +1,53 @@
+## Setup
+* Links 
+  * https://github.com/facebookincubator/create-react-app
+  * https://developer.chrome.com/extensions/getstarted
+  * Class Properties + Arrow Syntax http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/
+* Steps
+  ```
+  npm install -g create-react-app
+  create-react-app chrome_ext_skag
+  cd chrome_ext_skag
+  ```
+
+## Chrome Extension Setup
+
+* Local Development
+  * Running
+    * Configure manifest.json [https://developer.chrome.com/extensions/manifest](https://developer.chrome.com/extensions/manifest)
+      * TODO - Add "oauth2" client id property
+    * Enable developer mode [chrome://extensions/](chrome://extensions/)
+    * Build app `npm run build`
+    * Open Chrome Extensions Window [chrome://extensions/](chrome://extensions/)
+    * Drag /build folder into the Chrome Extensions Window
+    * Click Icon that appears in Chrome Browser
+  * Debugging:
+    * https://developer.chrome.com/extensions/tut_debugging
+* Chrome Extension APIs
+  * Links
+    * [APIs Index](https://developer.chrome.com/extensions/api_index)
+    * [APIs Other](https://developer.chrome.com/extensions/api_other)
+    * [DevGuide](https://developer.chrome.com/extensions/devguide)
+  * accessibilityFeaatures
+  * alarms
+  * browserAction
+  * commands
+  * contentSettings
+  * events
+  * fontSettings
+  * identity
+  * idle
+  * input.ime
+  * notifications
+  * permissions
+  * runtime
+  * sessions
+  * storage
+  * tts
+  * ttsEngine
+  * wallpaper
+  * webRequest
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
